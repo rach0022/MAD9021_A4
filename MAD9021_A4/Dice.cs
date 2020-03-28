@@ -53,12 +53,17 @@ namespace MAD9021_A4
         {
             //The console keyword access the Console object which is used
             //for all input, output and error streams for console applications
-            Console.WriteLine(faceValue);
+            //Console.WriteLine(faceValue);
+            Console.WriteLine("-----");
+            Console.WriteLine("-   -");
+            Console.WriteLine($"- {faceValue}  -");
+            Console.WriteLine("-   -");
+            Console.WriteLine("-----");
         }
 
         public byte GetFaceValue() { return faceValue; }
 
-        protected void setFaceValue(byte faceValue) {
+        private void setFaceValue(byte faceValue) {
             if (faceValue <= MAX_FACE_VAL && faceValue >= MIN_FACE_VAL)
             {
                 this.faceValue = faceValue;
