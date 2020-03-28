@@ -53,12 +53,7 @@ namespace MAD9021_A4
         {
             //The console keyword access the Console object which is used
             //for all input, output and error streams for console applications
-            //Console.WriteLine(faceValue);
-            Console.WriteLine("-----");
-            Console.WriteLine("-   -");
-            Console.WriteLine($"- {faceValue}  -");
-            Console.WriteLine("-   -");
-            Console.WriteLine("-----");
+            Console.WriteLine(faceValue);
         }
 
         public byte GetFaceValue() { return faceValue; }

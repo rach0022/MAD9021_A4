@@ -39,6 +39,11 @@ namespace MAD9021_A4
         public new void Draw()
         {
             // This method will draw a graphical dice using ascii graphics and display the faceValue inside the graphic
+            Console.WriteLine("-----");
+            Console.WriteLine("-   -");
+            Console.WriteLine($"- {faceValue} -");
+            Console.WriteLine("-   -");
+            Console.WriteLine("-----");
         }
 
         public new byte Roll()

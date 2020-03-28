@@ -20,40 +20,16 @@ namespace MAD9021_A4
             //    d1.Draw();
             //}
 
-            Dice d1 = new Dice();
-
-            uint[] rolledNumbers = new uint[6];
+            var dX1 = new DiceDLX(3);
+            
 
             for (int i = 0; i < 6000000; i++)
             {
-                byte rolledNumber = d1.Roll();
-
-                switch (rolledNumber)
-                {
-                    case 1:
-                        rolledNumbers[0]++;
-                        break;
-                    case 2:
-                        rolledNumbers[1]++;
-                        break;
-                    case 3:
-                        rolledNumbers[2]++;
-                        break;
-                    case 4:
-                        rolledNumbers[3]++;
-                        break;
-                    case 5:
-                        rolledNumbers[4]++;
-                        break;
-                    case 6:
-                        rolledNumbers[5]++;
-                        break;
-
-                    default:
-                        Console.WriteLine("Dice Error!!");
-                        break;
-                }
+                dX1.Roll();
             }
+
+            //get the array of roll statistics
+            uint[] rolledNumbers = dX1.GetStatistics();
 
             // output
 
@@ -76,7 +52,16 @@ namespace MAD9021_A4
 
             Console.WriteLine("\n");
 
-            d1.Draw();
+            //dX1.Draw();
+
+            var testDice = new Dice();
+            var testDelux = new DiceDLX();
+
+            testDice.Roll();
+            testDelux.Roll();
+
+            testDice.Draw();
+            testDelux.Draw();
 
 
             Console.WriteLine("\nPress any key to continue. . .");
