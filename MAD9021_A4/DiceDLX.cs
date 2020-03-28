@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*************************
+ *
+ *  @description The dice delux Class
+ *
+ *  @author Ravi Chandra Rachamalla rach0022@algonquinlive.com
+ *
+ *  @version Mar 28, 2020
+ *
+ ***********************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
