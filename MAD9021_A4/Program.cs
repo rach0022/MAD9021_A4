@@ -45,9 +45,13 @@ namespace MAD9021_A4
             Console.WriteLine();
             Console.WriteLine(dashes);
 
-            for (int i = 0; i < 6; i++)
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    Console.Write($"\t{rolledNumbers[i]}\t");
+            //}
+            foreach (int num in rolledNumbers)
             {
-                Console.Write($"\t{rolledNumbers[i]}\t");
+                Console.Write($"\t{num}\t");
             }
 
             Console.WriteLine("\n");
